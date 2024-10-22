@@ -1,0 +1,86 @@
+1) files -> detection -> phishing -> run -> server link (http://127.0.0.1:8000/) -> copy the link and paste it in the search bar by adding index.html (http://127.0.0.1:8000/index.html) -> you'll be asked to enter id,password (id,password - admin) 
+
+2) test you url -> { files -> detection -> phishing -> MODELS (benign - genuine websites , online-valid - phished websites)} 
+
+3)algorithms lo SVM,Light GBM
+   
+Algorithm Name	    Accuracy	            Precision	            Recall	              FScore
+SVM	            95.72004028197382	    96.37448769388678	    92.48248345659789	      94.21492672960187
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* ACCURACY = model website ni genuine/phished ani entha accurate ga predict chesindhi anae percentage 
+              miru guide okkavela adiigithae ila cheppali 
+              { Accuracy is the ratio of correctly predicted instances (both true positives and true negatives) to the total number of instances in the dataset. It measures the overall     correctness of the model}
+
+
+
+* PRECISION = model incase true positive value ichindi anukundam oka particular website ki so adhi prediction entha right undi anaedi
+            {Precision is the ratio of correctly predicted positive observations (true positives) to the total predicted positive observations. It indicates how precise the classifier is when it predicts the positive class}
+
+
+
+* RECALL = true positive prediction ratio ni recall antaru 
+         {Recall is the ratio of correctly predicted positive observations (true positives) to all observations in the actual class (true positives + false negatives). It measures the completeness of the model}
+
+
+
+* FSCORE = precision + recall 
+         {The F-Score is the harmonic mean of precision and recall. It provides a single metric that balances both precision and recall}  
+
+ example : 
+           SVM achieved an Accuracy of 95.72%, meaning it correctly predicted 95.72% of the instances in the dataset.
+           Precision is 96.37%, indicating that when SVM predicted a positive class, it was correct 96.37% of the time.
+           Recall is 92.48%, suggesting that SVM correctly identified 92.48% of all positive instances in the dataset.
+           F-Score is 94.21%, which combines precision and recall into a single metric that balances both measures.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+so ikkada e terms explain chese degggara true positives,true negative,false positives, false negatives ani terms vachay kadha...
+
+True Positive (TP): Model predicted positive, and it was actually positive
+True Negative (TN): Model predicted negative, and it was actually negative
+False Positive (FP): Model predicted positive, but it was actually negative 
+False Negative (FN): Model predicted negative, but it was actually positive 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+PPT lo anni include chesa maximum anni include chesa and okka saari adhi complete ga chadavandi,case study kooda include chesa better understanding ki and last slide lo execution vedio kooda pettina miru mi presentation kosam separate ga ppt cheyalsina avasaram laedhu,konni miku eh slides ayithe explain cheyadaniki kashtam anipistheyo h slides delete chesi ade ppt present cheyandi.. ipothadi em ana depth lo adigithae idhi just oka basic model e case study ni base cheskoni orepare chesina model idhi so ekkuva advanced ga laedhu,and inka train chesthunam 20,000 urls tho ani chepthae saripothadi....
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ivi em adagaru but miku idea undali ani 
+
+
+ Accuracy = (Total Number of Predictions/Number of Correct Predictions) × 100
+ 
+  
+ Precision =True Positives/True Positives + False Positives
+
+
+ Recall = True Positives/True positives + False Negatives
+  
+
+ F-Score= 2×Precision×Recall / Precision+Recall
+
+
+
+
+
+
+​
+
+​                                                                      ------------------×-------------------
+
+
+
+ 
+
+​
+
+ 
